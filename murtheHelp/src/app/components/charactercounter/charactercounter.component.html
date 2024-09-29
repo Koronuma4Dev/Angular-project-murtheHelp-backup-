@@ -1,0 +1,15 @@
+
+    <div class="character-counter">
+        <label for="stringInput">Enter a word:</label>
+        <input 
+          type="text" 
+          id="stringInput" 
+          placeholder="Type something..." 
+          (input)="onStringInput($event)">
+      </div>
+      
+      <div>
+        <h3>Character Count:</h3>
+        <p>{{ characterCount }}</p>
+      </div>
+

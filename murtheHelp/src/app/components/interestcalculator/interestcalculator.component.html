@@ -1,0 +1,12 @@
+<main>
+    <input #Principal type="text" placeholder="Enter principal"><br>
+
+    <input #Rate type="text" placeholder="Enter rate"><br>
+
+    <input #Time type="text" placeholder="Enter time"><br>
+
+
+    <button (click)="calculate(Principal, Rate, Time)">Calculate the interest</button>
+
+    <h1>Interest: {{ Interest}}</h1>
+</main>

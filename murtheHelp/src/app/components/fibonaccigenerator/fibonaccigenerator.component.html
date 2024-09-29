@@ -1,0 +1,15 @@
+
+<div>
+    <h2>Fibonacci Sequence Generator</h2>
+  
+    <label for="num">Enter the number of Fibonacci numbers to generate:</label>
+    <input #numInput type="number" id="num" placeholder="Enter a number">
+  
+    <button (click)="generateFibonacci(numInput.value)">Generate Fibonacci</button>
+  
+    <div *ngIf="fibonacciSequence.length > 0">
+      <h3>Fibonacci Sequence:</h3>
+      <p>{{ fibonacciSequence.join(', ') }}</p>
+    </div>
+  </div>
+  

@@ -1,0 +1,17 @@
+
+
+<main>
+    <div class="palindrome-checker"></div>
+    <label for="wordInput">Enter a word:</label>
+    <input 
+      type="text" 
+      id="wordInput" 
+      placeholder="Type a word..." 
+      (input)="onWordInput($event)" />
+  
+  
+  <div>
+    <h3>Palindrome Check:</h3>
+    <p>{{ isPalindrome !== null ? (isPalindrome ? 'Yes, it is a palindrome!' : 'No, it is not a palindrome.') : 'Enter a word to check.' }}</p>
+  </div>
+</main>

@@ -1,0 +1,19 @@
+<h1>Table of Elements generator</h1>
+
+
+<div>
+    <input #inputLetter type="text" placeholder="Enter a letter" />
+    <button (click)="onSubmit(inputLetter.value)">Submit</button>
+  </div>
+  
+  <table *ngIf="filteredElements.length > 0">
+    <tr>
+      <th>Element</th>
+    </tr>
+    <tr *ngFor="let element of filteredElements">
+      <td>{{ element }}</td>
+    </tr>
+  </table>
+  
+  <p *ngIf="filteredElements.length === 0 && submitted">No elements found.</p>
+  

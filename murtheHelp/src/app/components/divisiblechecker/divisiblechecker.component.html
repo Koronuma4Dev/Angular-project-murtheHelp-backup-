@@ -1,0 +1,14 @@
+
+<div>
+    <h2>Divisibility Checker</h2>
+    <label for="number1">Enter the first number:</label>
+    <input #number1 type="number" id="number1" placeholder="First number"><br>
+  
+    <label for="number2">Enter the second number:</label>
+    <input #number2 type="number" id="number2" placeholder="Second number"><br>
+  
+    <button (click)="checkDivisibility(number1.value, number2.value)">Enter</button>
+  
+    <p>{{ resultMessage }}</p>
+  </div>
+  

@@ -1,0 +1,15 @@
+<div class="url-input">
+    <label for="urlInput">Enter the link:</label>
+    <input type="text" id="urlInput" placeholder="Enter a valid URL" (input)="onUrlInput($event)" />
+    <button (click)="addUrl()">Add URL</button>
+  </div>
+  
+  <div class="url-list">
+    <h3>Saved URLs:</h3>
+    <ul>
+      <li *ngFor="let url of urlList">
+        <a [href]="url" target="_blank">{{ url }}</a>
+      </li>
+    </ul>
+  </div>
+  

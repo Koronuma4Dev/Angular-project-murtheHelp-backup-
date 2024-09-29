@@ -1,0 +1,11 @@
+<div>
+    <label for="userString">Enter a word:</label>
+    <input type="text" id="userString" #userInput placeholder="Type something..." />
+  </div>
+  <div>
+    <button (click)="calculateStringLength(userInput.value)">BOOGSH KABOUGHSH</button>
+  </div>
+  
+  <p>Length of the word: {{ stringLength }}</p>
+  
+  

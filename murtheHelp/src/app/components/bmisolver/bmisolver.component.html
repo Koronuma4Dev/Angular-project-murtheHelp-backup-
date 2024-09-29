@@ -1,0 +1,14 @@
+<!-- app.component.html -->
+<div>
+    <h2>BMI Calculator</h2>
+    <label for="height">Enter your height (in meters):</label>
+    <input #height type="number" id="height" placeholder="Height (m)" step="0.01"><br>
+  
+    <label for="weight">Enter your weight (in kilograms):</label>
+    <input #weight type="number" id="weight" placeholder="Weight (kg)" step="0.1"><br>
+  
+    <button (click)="calculateBMI(height.value, weight.value)">Calculate BMI</button>
+  
+    <p *ngIf="bmi">Your BMI is: {{ bmi | number: '1.1-1' }}</p>
+  </div>
+  

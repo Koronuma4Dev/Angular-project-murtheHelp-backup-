@@ -1,0 +1,9 @@
+<h1>Simple Flash Card App</h1>
+
+<div class="flashcard">
+  <p *ngIf="!showAnswer">{{ flashcards[currentCardIndex].question }}</p>
+  <p *ngIf="showAnswer">{{ flashcards[currentCardIndex].answer }}</p>
+</div>
+
+<button (click)="toggleCard()">Show {{ showAnswer ? 'Question' : 'Answer' }}</button>
+<button (click)="nextCard()">Next Card</button>

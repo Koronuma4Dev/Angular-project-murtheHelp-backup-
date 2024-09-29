@@ -1,0 +1,12 @@
+<div>
+    <input #num1 type="number" placeholder="Enter first number">
+    <input #num2 type="number" placeholder="Enter second number">
+  
+    <button (click)="add(num1.value, num2.value)">Add</button>
+    <button (click)="subtract(num1.value, num2.value)">Subtract</button>
+    <button (click)="multiply(num1.value, num2.value)">Multiply</button>
+    <button (click)="divide(num1.value, num2.value)">Divide</button>
+  
+    <p>Result: {{ result }}</p>
+  </div>
+  

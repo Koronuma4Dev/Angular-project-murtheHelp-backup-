@@ -1,0 +1,9 @@
+<div>
+    <input #usdInput type="number" placeholder="Enter amount in USD">
+    <button (click)="convertCurrency(usdInput.value)">Convert</button>
+  
+    <p *ngIf="usdInput.value">Amount in PHP: {{ convertedToPHP }}</p>
+    <p *ngIf="usdInput.value">Amount in KRW: {{ convertedToKRW }}</p>
+    <p *ngIf="usdInput.value">Amount in JPY: {{ convertedToJPY }}</p>
+  </div>
+  

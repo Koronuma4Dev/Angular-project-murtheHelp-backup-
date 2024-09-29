@@ -1,0 +1,15 @@
+
+<div>
+    <h2>Sum of Odd Numbers Calculator</h2>
+  
+    <label for="num">Enter a number:</label>
+    <input #numInput type="number" id="num" placeholder="Enter a number">
+  
+    <button (click)="calculateSumOfOddNumbers(numInput.value)">Calculate Sum</button>
+  
+    <div *ngIf="sum !== null">
+      <h3>Sum of Odd Numbers:</h3>
+      <p>{{ sum }}</p>
+    </div>
+  </div>
+  

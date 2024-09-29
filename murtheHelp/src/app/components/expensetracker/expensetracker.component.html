@@ -1,0 +1,16 @@
+<div>
+    <h2>Expense Tracker</h2>
+  
+    <input type="text" id="item" placeholder="Item" #itemInput>
+    <input type="number" id="amount" placeholder="Amount" #amountInput>
+    <button (click)="addExpense(itemInput.value, amountInput.value)">Add Expense</button>
+  
+    <ul>
+      <li *ngFor="let expense of expenses">
+        {{ expense.item }} - {{ expense.amount | currency:'Php' }}
+      </li>
+    </ul>
+  
+    <h3>Total: {{ getTotal() | currency:'Php' }}</h3>
+  </div>
+  

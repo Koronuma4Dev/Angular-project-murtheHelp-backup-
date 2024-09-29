@@ -1,0 +1,10 @@
+<h1>Simple Recipe Book</h1>
+
+<div *ngFor="let recipe of recipes">
+  <h2>{{ recipe.name }}</h2>
+  <h3>Ingredients:</h3>
+  <ul>
+    <li *ngFor="let ingredient of recipe.ingredients">{{ ingredient }}</li>
+  </ul>
+</div>
+

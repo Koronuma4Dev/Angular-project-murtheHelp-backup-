@@ -1,0 +1,12 @@
+<h1>Simple Image Gallery</h1>
+
+<div class="input-container">
+  <input type="text" #imageInput placeholder="Add image URL">
+  <button (click)="addImage(imageInput)">Add Image</button>
+</div>
+
+<div class="gallery-container">
+  <div class="gallery-item" *ngFor="let image of imageList">
+    <img [src]="image" alt="Image">
+  </div>
+</div>

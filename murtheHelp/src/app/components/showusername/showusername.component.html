@@ -1,0 +1,8 @@
+<div>
+    <label for="username">Enter your username:</label>
+    <input type="text" id="username" #usernameInput />
+    <button (click)="displayUsername(usernameInput.value)">Submit</button>
+  </div>
+  
+  <p>Your username is: {{ displayedUsername }}</p>
+  

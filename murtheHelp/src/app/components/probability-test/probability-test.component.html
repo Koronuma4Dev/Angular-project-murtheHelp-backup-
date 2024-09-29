@@ -1,0 +1,22 @@
+<div>
+    <h2>Probability Test</h2>
+    <form (submit)="calculateProbability($event)">
+    
+      <label for="favorable">Favorable Outcomes:</label>
+      <input id="favorable" type="number" #favorableInput>
+      <br>
+   
+      <label for="total">Total Outcomes:</label>
+      <input id="total" type="number" #totalInput>
+      <br>
+      
+  
+      <button type="submit">Calculate Probability</button>
+    </form>
+  
+
+    <div *ngIf="probability !== null">
+      <p>The probability is: {{ probability }}</p>
+    </div>
+  </div>
+  
